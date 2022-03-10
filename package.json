@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint . -c .eslintrc.js --ext .js,.jsx,.ts,.tsx",
     "format": "eslint . -c .eslintrc.js --fix --ext .js,.jsx,.ts,.tsx",
     "test": "jest",
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "prepare": "husky install"
+    "release": "standard-version"
   },
   "dependencies": {
     "react": "17.0.2",
